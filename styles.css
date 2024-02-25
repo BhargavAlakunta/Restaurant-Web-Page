@@ -1,0 +1,206 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+/*header styles*/
+
+.header, .navbar{
+    display: flex;
+}
+.navbar li{
+    list-style-type: none;
+    padding: 0px 10px;
+    margin: 0px 10px;
+}
+li a{
+text-decoration: none;
+color: white ;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #944E63;
+    /* position: fixed; */
+}
+.locations{
+    display: none;
+    padding: 5px 0px;
+}
+.navbar li:hover .locations{
+    display: block;
+    position: absolute;
+    background-color: white;
+}
+.locations li{
+    padding: 10px;
+}
+/*header styles*/
+
+/*banner styles*/
+
+.banner-image{
+    background-size: cover;
+}
+.banner-image p{
+    width: 50%;
+    padding: 20px;
+    font-size: 26px;
+    color: white;
+    
+}
+.banner-image h1{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    font-size: 40px;
+    color: rgb(243, 238, 230);
+}
+/*banner styles*/
+
+/*services styles*/
+
+.services{
+    background-color:rgb(250, 233, 233);
+    padding: 13px 45px;
+}
+.verieties{
+    display: flex;
+    padding: 10px 0px;
+}
+.verieties2{
+    direction: rtl;
+}
+.verieties img{
+    width: 300px;
+    height: 300px;
+    border-start-start-radius: 20px;
+    border-end-start-radius: 20px;
+    box-shadow: 0px 10px 20px black;
+}
+.verieties h3 a{
+    text-decoration: none;
+    color: black;
+}
+.verieties-info p{
+    direction: ltr;
+    padding: 0px 10px;
+}
+.verieties-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    font-size: 24px;
+    border-start-end-radius: 20px;
+    border-end-end-radius: 20px;
+    box-shadow: 10px 10px 20px black; 
+}
+
+
+/*services styles*/
+/*footer styles*/
+.follow-page li a, .help-page li a{
+    color: black;
+}
+.follow-page li, .help-page li{
+    list-style-type: none;
+    margin: 10px 0px;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #944E63;
+}
+.more-pages{
+    display: flex;
+}
+.follow-page, .help-page{
+    margin: 15px;
+}
+
+/*footer styles*/
+
+/*media queries*/
+
+@media screen and (max-width:560px)  {
+    .header{
+        flex-direction: column;
+    }
+    .navbar{
+        flex-direction: column;
+    }
+    .navbar li{
+        padding: 5px 0px;
+    }
+    .banner-image h1{
+        font-size: 32px;
+        width: 100%;
+    }
+    .banner-image p{
+        width: 100%;
+    }
+    .verieties{
+        flex-direction: column;
+    }
+    .verieties-image img {
+        width:100% ;
+        border-radius: 20px;
+    }
+    .verieties-info{
+        width: 100%;
+        border-radius: 20px;
+    }
+    .verieties{
+        padding: 10px;
+    }
+}
+@media screen and (min-width:561px) and (max-width:720px)  {
+    .header{
+        flex-direction: column;
+    }
+    .banner-image h1{
+        width: 100%;
+    }
+    .banner-image p{
+        width: 100%;
+    }
+    .verieties{
+        flex-direction: column;
+    }
+    .verieties-image img {
+        justify-content: center;
+        border-radius: 20px;
+        
+    }
+    .verieties-image{
+        align-items: center;
+    }
+    .verieties-info{
+        width: 100%;
+        border-radius: 20px;
+    }
+    .verieties-info h3{
+        padding: 8px 0px;
+    }
+}
+@media screen and (min-width:721px) and (max-width:1080px) {
+    .banner-image h1{
+        width: 100%;
+    }
+    .banner-image p{
+        width: 100%;
+    }
+    .verieties-info{
+        width: 50%;
+    }
+}
+@media screen and (min-width:1081px) and (max-width:1280px) {
+   .banner-image p{
+    width: 80%;
+   }
+}
+/*media queries*/

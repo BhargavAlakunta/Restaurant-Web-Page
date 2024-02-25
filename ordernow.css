@@ -1,0 +1,116 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+/*header styles*/
+
+.header, .navbar{
+    display: flex;
+}
+.navbar li{
+    list-style-type: none;
+    padding: 0px 10px;
+    margin: 0px 10px;
+}
+li a{
+text-decoration: none;
+color: white ;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #944E63;
+    /* position: fixed; */
+}
+.locations{
+    display: none;
+    padding: 5px 0px;
+}
+.navbar li:hover .locations{
+    display: block;
+    position: absolute;
+    background-color: white;
+}
+.locations li{
+    padding: 10px;
+}
+/*header styles*/
+/*order now styles*/
+.rate{
+    display: flex;
+    margin-top: 4px;
+}
+.rate p{
+    padding: 0px 3px;
+}
+.striked{
+    text-decoration: line-through;
+}
+#add{
+    width: 40px;
+    height: 18px;
+}
+.food-block{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 100%;
+}
+.pure-veg h2 , .non-veg h2 , .biryani h2 , .indian-thali h2 , .pizza h2 , .ice-cream h2{
+    margin: 20px 0px;
+    text-align: center;
+}
+.items{
+    /* margin: 5px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 20%;
+
+}
+.ice-cream{
+    padding-bottom: 20px;
+}
+/*order now styles*/
+/*footer styles*/
+.follow-page li a, .help-page li a{
+    color: black;
+}
+.follow-page li, .help-page li{
+    list-style-type: none;
+    margin: 10px 0px;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #944E63;
+}
+.more-pages{
+    display: flex;
+}
+.follow-page, .help-page{
+    margin: 15px;
+}
+/*footer styles*/
+
+/*media queries*/
+@media screen and (max-width:560px)  {
+    .header{
+        flex-direction: column;
+    }
+    .navbar{
+        flex-direction: column;
+    }
+    .navbar li{
+        padding: 5px 0px;
+    }
+}
+@media screen and (min-width:561px) and (max-width:720px)  {
+    .header{
+        flex-direction: column;
+    }
+}
+
+/*media queries*/
